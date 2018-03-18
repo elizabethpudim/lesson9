@@ -60,11 +60,11 @@
 
 /*pseudoclasses*/
 
-a:hover{
+/*a:hover{
 	color: red;
-}
+}*/
 /*как выглядит ссылка*/
-a:link{ 
+/*a:link{ 
 	text-decoration: none;
 	color: blue;
 }
@@ -73,7 +73,10 @@ a:visited{
 }
 a:focus{
 	background-color: red;
-}
+}*/
+/*a:clicked{
+
+}*/
 input{
 	background-color: none;
 	border: none;
@@ -127,3 +130,18 @@ ul li:nth-child(4) div:before{
 	z-index: -1
 	
 }*/
+/*промежуточные значения игнорируются*/
+ul li a{
+	font-size: 30px;
+}
+/*непосредственно вложены друг в друге*/
+ul > li > a{
+	background-color: lightgreen;
+}
+/*+ на том же уровне вложенности после а непосредственно*/
+ul > li > a+p{
+	color:red;
+}
+ul > li > a~p{
+	background-color: green;
+}
